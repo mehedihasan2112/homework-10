@@ -1,0 +1,297 @@
+.one{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1408px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+/*==========================================
+              nav part start
+=============================================*/
+nav{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+nav .box{
+    display: flex;
+}
+nav .logo{
+    width: 20%;
+}
+nav .item{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .item ui,li{
+    list-style: none;
+}
+nav .item ui{
+    display: flex;
+    column-gap: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+nav .item ui li i{
+    margin-left: 14px;
+}
+nav .button{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .button a{
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 18px;
+    background: #FF5538;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+/*=========================================
+              nav part end
+=============================================*/
+
+/*=========================================
+              banner part start
+=============================================*/
+.banner{
+    background: url(../images/banner.png);
+    padding: 300px 0; 
+    position: relative;
+}
+.banner .round-shape{
+    width: 100px;
+    height: 100px;
+    border: 2px solid  #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 117px;
+    left: 780px;
+    animation: r 3s alternate-reverse infinite linear;
+}
+.banner .round-shape .inner-shape{
+    width: 30px;
+    height: 30px;
+    background: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 11px;
+    top: 76px;
+}
+@keyframes r{
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(-90deg);
+    }
+}
+.banner .dot{
+    width: 30px;
+    height: 30px;
+    background: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    right: 745px;
+    animation: sc 2s infinite linear;
+}
+@keyframes sc{
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(70%);
+      opacity: 0;
+    }
+}
+.banner .cross{
+    color: #C087EE;
+    position: absolute;
+    top: 370px;
+    right: 480px; 
+    animation: sc1 2s alternate infinite linear;
+}
+@keyframes sc1{
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(100%);
+      opacity: 20px;
+    }
+}
+.banner .cross-1{
+    color: #C087EE;
+    position: absolute;
+    top: 350px;
+    left: 400px;
+    animation: r1 2s infinite linear;
+}
+@keyframes r1{
+    0%{
+       transform: scale(0)
+                 rotate(0);
+    }
+    100%{
+        transform: scale(1)
+                   rotate(360deg);   
+    }
+}
+.banner .h1{
+    color: #29313D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    width: 771px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+.banner p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 547px;
+    color: #29313D;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 44px;
+}
+.banner .button{
+    text-align: center;
+    position: relative;
+}
+.banner .button a{
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 18px;
+    background: #FF5538;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 12px;
+    border: 1px solid transparent;
+    transition: .6s;
+}.banner .button a:hover{
+    background: transparent;
+    color:#FF5538 ;
+    border-color: #FF5538;
+}
+/*=========================================
+              banner part end
+=============================================*/
+/*=========================================
+              service part start
+=============================================*/
+.service .box{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.service .div{
+    width: 30%;
+    height: 400px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,1);
+     box-shadow: 0px 0px 5px 1px rgba(0,0,0,1);
+     padding: 30px 40px;
+     box-sizing: border-box;
+}
+.service .div h3{
+    color: #29313D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 34px;
+    margin-bottom: 16px;
+}
+.service .div p{
+    color: #29313D;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+/*=========================================
+              service part end
+=============================================*/
+/*=========================================
+              digital part start
+=============================================*/
+.digital .h4{
+    color: #FF5538;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.digital .h2{
+    color: #29313D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    width: 449px;
+    line-height: 140%;
+    margin-top: 10px;
+}
+.digital .box{
+    display: flex;
+}
+.digital .box .left{
+    width: 50%;
+    height: 300px;
+}
+.digital .left img{
+    position: relative;
+    top: 30px;
+    left: 45px;
+}
+.digital .right{
+    width: 50%;
+    background: url(../images/digital2.png) no-repeat center ;
+    background-size: cover;
+    padding: 100px 180px;
+    position: relative;
+}
+.digital .right h3{
+    color: #29313D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    width: 570px;
+}
+.digital .right p{
+    color: #29313D;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 501px;
+    line-height: 200%;
+    margin-top: 20px;
+}
+.digital .right img{
+    position: absolute;
+    top: 105px;
+    right: 0;
+}
+ /*=========================================
+              service part end
+=============================================*/
